@@ -1,0 +1,64 @@
+.retreats-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.retreat-card {
+    width: calc(30% - 30px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgb(224, 217, 207);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+
+}
+
+.retreat-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.retreat-card h2 {
+    display: flex;
+    justify-content: start;
+    margin: 10px 0;
+    font-size: 16px;
+    
+}
+
+.retreat-card p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: small;
+    color: black;
+    padding: 2px;
+}
+
+
+@media (max-width: 1200px) {
+    .retreat-card {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .retreat-card {
+        width: calc(100% - 30px);
+    }
+}

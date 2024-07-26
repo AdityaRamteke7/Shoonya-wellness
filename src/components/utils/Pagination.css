@@ -1,0 +1,24 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: navy;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    .pagination button,
+    .pagination span {
+        font-size: 14px;
+    }
+}
